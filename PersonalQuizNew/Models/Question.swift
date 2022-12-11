@@ -28,7 +28,8 @@ struct Question {
                   answers: [Answer(title: "Hate", type: .cat),
                             Answer(title: "Nervous", type: .rabbit),
                             Answer(title: "Don't notice", type: .turtle),
-                            Answer(title: "Adore", type: .dog)])]
+                            Answer(title: "Adore", type: .dog)])
+    ]
     }
 }
 
@@ -46,7 +47,7 @@ enum ResponseType {
 }
 
 
-enum AnimalType: Character {
+enum AnimalType: Character, CaseIterable{
     case dog = "🐶"
     case cat = "🐱"
     case rabbit = "🐰"
